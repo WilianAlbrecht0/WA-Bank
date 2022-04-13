@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bntLogin = new System.Windows.Forms.Button();
+            this.btbCreate = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -86,12 +88,34 @@
             this.bntLogin.TabIndex = 5;
             this.bntLogin.Text = "Entrar";
             this.bntLogin.UseVisualStyleBackColor = true;
+            this.bntLogin.Click += new System.EventHandler(this.bntLogin_Click);
+            // 
+            // btbCreate
+            // 
+            this.btbCreate.Location = new System.Drawing.Point(37, 236);
+            this.btbCreate.Name = "btbCreate";
+            this.btbCreate.Size = new System.Drawing.Size(75, 23);
+            this.btbCreate.TabIndex = 6;
+            this.btbCreate.Text = "Criar conta";
+            this.btbCreate.UseVisualStyleBackColor = true;
+            this.btbCreate.Click += new System.EventHandler(this.btbCreate_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(37, 217);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Não tem conta?";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(210, 271);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btbCreate);
             this.Controls.Add(this.bntLogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -113,6 +137,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bntLogin;
+        private System.Windows.Forms.Button btbCreate;
+        private System.Windows.Forms.Label label4;
     }
 }
 

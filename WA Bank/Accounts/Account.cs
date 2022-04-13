@@ -12,7 +12,7 @@ namespace WA_Bank.Accounts
         public string Password { get; set; }
         public string Cpf { get; set; }
         public string Tell { get; set; }   
-        public double Balance { get; set; }
+        public string Balance { get; set; }
 
         //constructor
 
@@ -28,7 +28,7 @@ namespace WA_Bank.Accounts
             this.Password = password;
             this.Tell = tell;
         }
-        public Account(string name, string password, string cpf, string tell,double balance)
+        public Account(string name, string password, string cpf, string tell,string balance)
         {
             this.Name = name;
             this.Password = password;
