@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WA_Bank.Accounts;
+using WA_Bank.DB_connection;
 
 namespace WA_Bank.Forms
 {
@@ -31,6 +32,10 @@ namespace WA_Bank.Forms
             {
                 OpennAccount acc = new OpennAccount(name, password,cpf,tell, balance);
                 acc.CreateAccount();
+
+                MessageBox.Show("Conta cadastrada com sucesso");
+
+                Visible = false;
             }
             else
             {

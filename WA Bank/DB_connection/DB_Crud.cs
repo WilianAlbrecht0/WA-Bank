@@ -35,7 +35,7 @@ namespace WA_Bank.DB_connection
                 cmd.ExecuteNonQuery();
                 con.CloseConection();
 
-                this.msg = "cadastro realizado com sucesso";
+                msg = "cadastro realizado com sucesso";
             }
             catch(SqlException)
             {
@@ -59,9 +59,12 @@ namespace WA_Bank.DB_connection
 
                 con.CloseConection();
 
-            }catch(SqlException e)
+                this.msg = "Conta criada com sucesso";
+
+            }catch(SqlException)
             {
                 this.msg = "nome ou senha incorretos";
+                
             }
 
         }
